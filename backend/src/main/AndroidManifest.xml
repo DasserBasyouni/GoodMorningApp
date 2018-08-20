@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.tech.futureteric.backend">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application>
+
+        <activity
+            android:name=".ui.SignUpActivity"
+            android:label="Sign In" />
+
+        <activity
+            android:name=".ui.PhoneLoginActivity"
+            android:label="Phone Number Login"
+            android:theme="@style/AppTheme.PhoneLoginActivity" />
+
+        <service android:name=".service.BackgroundJobService" />
+    </application>
+
+</manifest>

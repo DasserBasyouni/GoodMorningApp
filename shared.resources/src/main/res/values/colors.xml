@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="photo_placeholder">#ccc</color>
+
+    <!-- "m" is used as app is using another "colorPrimary" value, it's path is:
+    .gradle\caches\transforms-1\files-1.1\stylish-widget-1.4.2-alpha.aar\804436b1c7ca3b723fcc817bf7deeab1\res\values\values.xml
+     TODO (Q2) is that is the proper way to fix this, Note: I'm using "shared.resources" module to share styles between modules-->
+    <color name="mColorPrimary">#FAA018</color>
+    <color name="mColorPrimaryDark">#FFEF8F00</color>
+    <color name="mColorAccent">#36333A</color>
+    <color name="mBackgroundProtectionScrim">#3000</color>
+
+</resources>

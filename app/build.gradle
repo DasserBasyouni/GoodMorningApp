@@ -1,0 +1,84 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 27
+    defaultConfig {
+        applicationId "com.tech.futureteric.goodmorning"
+        // TODO support com.firebaseui:firebase-ui-auth on api 15
+        minSdkVersion 16
+        targetSdkVersion 27
+        versionCode 1
+        versionName "1.0-alpha"
+        multiDexEnabled true
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+        buildTypes.each {
+            it.buildConfigField "String", "UNSPLASH_API_KEY", "\"$System.env.UNSPLASH_API_KEY\""
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+
+    // modules
+    implementation project(path: ':lockscreen.ui')
+    implementation project(path: ':intro.ui')
+    implementation project(path: ':shared.resources')
+    implementation project(path: ':backend')
+    implementation project(path: ':find.friends')
+
+    // lockScreen ui libraries
+    implementation 'com.github.HITGIF:TextFieldBoxes:1.4.4'
+
+    // about ui libraries
+    implementation "com.mikepenz:aboutlibraries:6.1.0"
+    implementation 'com.github.jrvansuita:MaterialAbout:0.2.3'
+
+    // timber
+    implementation "com.jakewharton.timber:timber:${versions.timberLib}"
+
+    // lifecycle and persistence
+    implementation "android.arch.lifecycle:extensions:${versions.archLib}"
+    implementation "android.arch.lifecycle:viewmodel:${versions.archLib}"
+    implementation "android.arch.persistence.room:runtime:${versions.archLib}"
+    annotationProcessor "android.arch.persistence.room:compiler:${versions.archLib}"
+
+    // injection
+    implementation 'javax.inject:javax.inject:1@jar'
+
+    // butterKnife
+    implementation "com.jakewharton:butterknife:${versions.butterKnifeLib}"
+    annotationProcessor "com.jakewharton:butterknife-compiler:${versions.butterKnifeLib}"
+
+    // support libraries
+    implementation "com.android.support:appcompat-v7:${versions.supportLib}"
+    implementation "com.android.support:design:${versions.supportLib}"
+    implementation "com.android.support:support-annotations:${versions.supportLib}"
+    implementation "com.android.support:support-v4:${versions.supportLib}"
+    implementation "com.android.support:recyclerview-v7:${versions.supportLib}"
+
+    // mixed versions avoidance
+    implementation "com.android.support:exifinterface:${versions.supportLib}"
+
+    // constraint layout
+    implementation "com.android.support.constraint:constraint-layout:${versions.constraintLayuotLib}"
+    implementation 'cn.hugeterry.coordinatortablayout:coordinatortablayout:1.2.2'
+
+    // multi-dex
+    implementation 'com.android.support:multidex:1.0.3'
+
+    // testing
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'com.android.support.test:runner:1.0.2'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+}

@@ -1,0 +1,18 @@
+<resources>
+    <declare-styleable name="CustomButton">
+
+        <!-- Main Button -->
+        <attr name="buttonBackground" format="color|reference" />
+
+        <!-- Button Text -->
+        <attr name="buttonText" format="string" />
+        <attr name="buttonTextSize" format="dimension" />
+        <attr name="buttonTextColor" format="color" />
+
+        <!-- Button BoomMenu -->
+        <attr name="buttonEnum" format="string" />
+        <attr name="buttonPlaceEnum" format="string" />
+        <attr name="piecePlaceEnum" format="string" />
+
+    </declare-styleable>
+</resources>

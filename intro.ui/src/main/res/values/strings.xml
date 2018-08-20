@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Intro.Ui</string>
+
+    <string name="label_welcome">Welcome To GoodMorning App</string>
+    <string name="label_already_have_account">I already have an account</string>
+    <string name="label_lets_get_started">Let\'s get started</string>
+    <string name="label_good_morning_app">GoodMorning App</string>
+
+    <string name="msg_welcome_description">In this tutorial we will tell you how to use it. Rest and leave your mind to us.</string>
+
+</resources>

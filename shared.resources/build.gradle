@@ -1,0 +1,50 @@
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion 27
+    defaultConfig {
+        minSdkVersion 15
+        targetSdkVersion 27
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+
+    // icons
+    implementation "com.mikepenz:iconics-core:3.0.4@aar"
+    implementation 'com.mikepenz:ionicons-typeface:2.0.1.4@aar'
+
+    // dialog ui
+    implementation 'com.afollestad.material-dialogs:core:0.9.6.0'
+
+    // support
+    implementation "com.android.support:appcompat-v7:${versions.supportLib}"
+
+    // mixed versions avoidance
+    implementation 'com.android.support:recyclerview-v7:27.1.1'
+
+    // timber
+    implementation "com.jakewharton.timber:timber:${versions.timberLib}"
+
+    // dexter
+    implementation 'com.karumi:dexter:5.0.0'
+
+    // testing
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'com.android.support.test:runner:1.0.2'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+}

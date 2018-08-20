@@ -1,0 +1,87 @@
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion 27
+    defaultConfig {
+        minSdkVersion 15
+        targetSdkVersion 27
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+
+    // modules
+    implementation project(path: ':shared.resources')
+
+    // room
+    implementation "android.arch.persistence.room:runtime:${versions.roomLib}"
+    annotationProcessor "android.arch.persistence.room:compiler:${versions.roomLib}"
+
+    // ui
+    implementation "com.mikepenz:iconics-core:${versions.iconicsLib}"
+    implementation "com.mikepenz:iconics-views:${versions.iconicsLib}"
+    implementation 'com.mikepenz:ionicons-typeface:2.0.1.4@aar'
+    implementation 'com.unstoppable:submitbutton:1.1.3'
+    implementation('com.lamudi.phonefield:phone-field:0.1.3@aar') {
+        transitive = true
+        exclude group: 'com.googlecode.libphonenumber', module: 'libphonenumber'
+        implementation 'com.googlecode.libphonenumber:libphonenumber:8.9.9'
+    }
+    implementation 'com.infideap.blockedittext:block-edittext:0.0.6'
+    implementation 'com.firebaseui:firebase-ui-auth:4.0.0'
+
+    // support
+    implementation "com.android.support:appcompat-v7:${versions.supportLib}"
+    implementation 'com.android.support.constraint:constraint-layout:1.1.2'
+
+    // firebase
+    implementation 'com.google.firebase:firebase-core:16.0.1'
+    implementation 'com.google.firebase:firebase-auth:16.0.2'
+    implementation 'com.google.firebase:firebase-firestore:17.0.4'
+
+    // social media
+    implementation 'com.facebook.android:facebook-android-sdk:4.34.0'
+    implementation('com.twitter.sdk.android:twitter-core:3.3.0@aar') {
+        transitive = true
+    }
+
+    // picasso
+    implementation 'com.squareup.picasso:picasso:2.71828'
+    implementation 'com.squareup.okhttp:okhttp:2.7.2'
+
+    // TODO (Q1) I ran a gradle build --scan and found that firebase-core is using 26.1.0 support libraries
+    // Link: https://scans.gradle.com/s/wp7kg7yepisa4/dependencies?toggled=W1sxXSxbMSwxNF0sWzEsMTQsWzMzMl1dLFsxLDE0LFszMzIsMzMzXV0sWzEsMTQsWzMzMiwzNjZdXSxbMSwxNCxbMzMyLDM2NiwzNzJdXSxbMSwxNCxbMzMyLDM2NiwzNzIsMzczXV0sWzEsMTQsWzMzMiwzNjYsMzcyLDM3MywzMzVdXV0
+    // is that suppose to fix with overriding old versions by implementing them in gradle ?
+
+    // mixed versions avoidance
+    implementation "com.android.support:support-media-compat:${versions.supportLib}"
+    implementation "com.android.support:support-v4:${versions.supportLib}"
+    implementation "com.android.support:exifinterface:${versions.supportLib}"
+
+    // timber
+    implementation "com.jakewharton.timber:timber:${versions.timberLib}"
+
+    // database debugging
+    debugImplementation 'com.amitshekhar.android:debug-db:1.0.4'
+
+    // testing
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'com.android.support.test:runner:1.0.2'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+}
+apply plugin: 'com.google.gms.google-services'

@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">Backend</string>
+
+    <string name="label_icon_via_phone_number">{ion-android-call} Via Phone Number</string>
+    <string name="label_displayed_name">Displayed Name</string>
+    <string name="label_send">Send</string>
+    <string name="label_downTimer" formatted="false">%1$d Second left</string>
+
+    <string name="msg_sign_up_intro">It is just simple, that you can choose any of your social accounts to setup with it your GoodMorning account.</string>
+    <string name="msg_more_logging_in_methods_are_coming_soon">More Logging in methods are coming soon</string>
+    <string name="msg_phone_number_hint">Phone Number</string>
+    <string name="msg_invalid_phone_number">Please enter a valid phone number</string>
+    <string name="msg_valid_phone_number">Valid phone numbers!</string>
+    <string name="msg_send_info">App will send a SMS to verify your phone number. Carrier SMS charges may apply.</string>
+    <string name="msg_enter_verification_code">Please enter the code you received on a SMS a moment ago.</string>
+
+    <!-- authentication -->
+    <string name="facebook_application_id" translatable="false">210061619657132</string>
+    <string name="facebook_login_protocol_scheme" translatable="false">fb210061619657132</string>
+
+    <string name="twitter_consumer_key" translatable="false">0Cj2csASx559r07WHY7GnGEOk</string>
+    <string name="twitter_consumer_secret" translatable="false">CMuCyolJBDlMGqG8bWXhSwZHUWNOkOIdR4kejGhWdb0C403Anh</string>
+
+</resources>

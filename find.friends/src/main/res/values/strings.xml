@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">FindConnections</string>
+    <string name="label_lets_find_some">Lets find some</string>
+    <string name="label_oh_you_do_not_have_connections">Oh, You don\'t have connections</string>
+    <string name="msg_choose_how_to_search_for_friends">Choose how to search for friends, just one way is enough to us ;)</string>
+    <string name="label_phone">Phone</string>
+    <string name="label_email">Email</string>
+    <string name="msg_more_ways_are_coming_soon">More ways are coming soon!</string>
+    <string name="msg_searching">Searching</string>
+    <string name="label_found_friend">Found Friends</string>
+    <string name="msg_add_friend_button">Add Friend Button</string>
+    <string name="msg_friend_photo">Friend Photo</string>
+</resources>
