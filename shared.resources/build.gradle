@@ -4,7 +4,6 @@ android {
     compileSdkVersion 27
     defaultConfig {
         minSdkVersion 15
-        targetSdkVersion 27
         versionCode 1
         versionName "1.0"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
@@ -25,7 +24,7 @@ dependencies {
     implementation fileTree(include: ['*.jar'], dir: 'libs')
 
     // icons
-    implementation "com.mikepenz:iconics-core:3.0.4@aar"
+    implementation "com.mikepenz:iconics-core:${versions.iconicsLib}"
     implementation 'com.mikepenz:ionicons-typeface:2.0.1.4@aar'
 
     // dialog ui

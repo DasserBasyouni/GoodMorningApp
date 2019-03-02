@@ -4,7 +4,7 @@ android {
     compileSdkVersion 27
     defaultConfig {
         minSdkVersion 15
-        targetSdkVersion 27
+        //targetSdkVersion 27
         versionCode 1
         versionName "1.0"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
@@ -32,7 +32,7 @@ dependencies {
     implementation 'com.firebase:firebase-jobdispatcher:0.8.5'
 
     // fcm
-    implementation 'com.google.firebase:firebase-messaging:17.1.0'
+    implementation 'com.google.firebase:firebase-messaging:17.4.0'
 
     // ui
     implementation 'com.github.Kunzisoft:Android-SwitchDateTimePicker:2.0'

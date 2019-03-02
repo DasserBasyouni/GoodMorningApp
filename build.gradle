@@ -6,10 +6,10 @@ buildscript {
                 supportLib: "27.1.1",
                 archLib: "1.1.1",
                 butterKnifeLib: '8.8.1',
-                constraintLayuotLib: '1.1.2',
+                constraintLayuotLib: '1.1.3',
                 junitLib: '4.12',
                 testRunnerLib: '1.0.2',
-                iconicsLib: '3.0.4@aar',
+                iconicsLib: '3.1.0@aar',
                 timberLib: '4.7.1',
                 roomLib: '1.1.1'
         ]
@@ -20,8 +20,8 @@ buildscript {
         jcenter()
     }
     dependencies {
-        classpath 'com.android.tools.build:gradle:3.1.4'
-        classpath 'com.google.gms:google-services:4.0.2'
+        classpath 'com.android.tools.build:gradle:3.3.1'
+        classpath 'com.google.gms:google-services:4.2.0'
     }
 }
 

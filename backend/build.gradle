@@ -4,7 +4,6 @@ android {
     compileSdkVersion 27
     defaultConfig {
         minSdkVersion 15
-        targetSdkVersion 27
         versionCode 1
         versionName "1.0"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
@@ -47,12 +46,12 @@ dependencies {
 
     // support
     implementation "com.android.support:appcompat-v7:${versions.supportLib}"
-    implementation 'com.android.support.constraint:constraint-layout:1.1.2'
+    implementation "com.android.support.constraint:constraint-layout:${versions.constraintLayuotLib}"
 
     // firebase
-    implementation 'com.google.firebase:firebase-core:16.0.1'
-    implementation 'com.google.firebase:firebase-auth:16.0.2'
-    implementation 'com.google.firebase:firebase-firestore:17.0.4'
+    implementation 'com.google.firebase:firebase-core:16.0.7'
+    implementation 'com.google.firebase:firebase-auth:16.1.0'
+    implementation 'com.google.firebase:firebase-firestore:18.1.0'
 
     // social media
     implementation 'com.facebook.android:facebook-android-sdk:4.34.0'
@@ -62,7 +61,7 @@ dependencies {
 
     // picasso
     implementation 'com.squareup.picasso:picasso:2.71828'
-    implementation 'com.squareup.okhttp:okhttp:2.7.2'
+    implementation 'com.squareup.okhttp:okhttp:2.7.5'
 
     // TODO (Q1) I ran a gradle build --scan and found that firebase-core is using 26.1.0 support libraries
     // Link: https://scans.gradle.com/s/wp7kg7yepisa4/dependencies?toggled=W1sxXSxbMSwxNF0sWzEsMTQsWzMzMl1dLFsxLDE0LFszMzIsMzMzXV0sWzEsMTQsWzMzMiwzNjZdXSxbMSwxNCxbMzMyLDM2NiwzNzJdXSxbMSwxNCxbMzMyLDM2NiwzNzIsMzczXV0sWzEsMTQsWzMzMiwzNjYsMzcyLDM3MywzMzVdXV0
@@ -84,4 +83,4 @@ dependencies {
     androidTestImplementation 'com.android.support.test:runner:1.0.2'
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
 }
-apply plugin: 'com.google.gms.google-services'
+//apply plugin: 'com.google.gms.google-services'
