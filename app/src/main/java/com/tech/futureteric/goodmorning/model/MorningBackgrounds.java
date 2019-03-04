@@ -1,16 +1,18 @@
 package com.tech.futureteric.goodmorning.model;
 
-import android.arch.persistence.room.Ignore;
-import android.arch.persistence.room.PrimaryKey;
 import android.os.Parcel;
 import android.os.Parcelable;
 
 import java.util.List;
 
+import androidx.room.Ignore;
+import androidx.room.PrimaryKey;
+
 public class MorningBackgrounds {
 
     private List<Results> results;
-    @Ignore private int total_pages;
+    @Ignore
+    private int total_pages;
 
     public List<Results> getResults() {
         return results;
@@ -22,7 +24,8 @@ public class MorningBackgrounds {
 
     public static class Results implements Parcelable {
         private boolean sponsored;
-        @PrimaryKey private String id;
+        @PrimaryKey
+        private String id;
 
         public boolean isSponsored() {
             return sponsored;

@@ -1,9 +1,10 @@
 package com.tech.futureteric.sharedcomponents.dialog;
 
 import android.content.Context;
-import android.support.v7.widget.RecyclerView;
 
 import com.afollestad.materialdialogs.MaterialDialog;
+
+import androidx.recyclerview.widget.RecyclerView;
 
 public class CustomListDialog {
 

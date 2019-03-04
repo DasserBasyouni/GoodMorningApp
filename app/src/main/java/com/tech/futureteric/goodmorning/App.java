@@ -1,10 +1,9 @@
 package com.tech.futureteric.goodmorning;
 
-import android.support.annotation.NonNull;
-import android.support.multidex.MultiDexApplication;
-
 import com.tech.futureteric.sharedcomponents.BuildConfig;
 
+import androidx.annotation.NonNull;
+import androidx.multidex.MultiDexApplication;
 import timber.log.Timber;
 
 import static com.tech.futureteric.backend.utils.Utils.enablePicassoCaching;

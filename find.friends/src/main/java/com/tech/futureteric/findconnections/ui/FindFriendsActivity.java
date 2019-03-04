@@ -1,12 +1,11 @@
 package com.tech.futureteric.findconnections.ui;
 
 import android.os.Bundle;
-import android.support.design.widget.FloatingActionButton;
-import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.widget.EditText;
 
 import com.github.florent37.materialtextfield.MaterialTextField;
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.tech.futureteric.backend.model.Friend;
 import com.tech.futureteric.findconnections.R;
 import com.tech.futureteric.findconnections.Utils;
@@ -20,6 +19,8 @@ import com.tech.futureteric.sharedcomponents.model.IdlingDataModel;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 import static com.tech.futureteric.backend.utils.user.UserInfoUtils.isThisCurrentUser;
 import static com.tech.futureteric.backend.utils.user.UsersSearchUtils.searchForUserByEmail;

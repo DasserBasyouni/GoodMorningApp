@@ -1,6 +1,6 @@
 package com.tech.futureteric.backend.viewModel;
 
-import android.arch.lifecycle.ViewModel;
+import androidx.lifecycle.ViewModel;
 
 
 public class MorningBackgroundViewModel extends ViewModel {

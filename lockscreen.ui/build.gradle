@@ -1,7 +1,7 @@
 apply plugin: 'com.android.library'
 
 android {
-    compileSdkVersion 27
+    compileSdkVersion 28
     defaultConfig {
         minSdkVersion 15
         //targetSdkVersion 27
@@ -43,9 +43,9 @@ dependencies {
     implementation project(path: ':backend')
 
     // support
-    implementation "com.android.support:appcompat-v7:${versions.supportLib}"
-    implementation "com.android.support:recyclerview-v7:${versions.supportLib}"
-    implementation "com.android.support:design:${versions.supportLib}"
+    implementation "androidx.appcompat:appcompat:${versions.androidXAppCompat}"
+    implementation "androidx.recyclerview:recyclerview:${versions.androidXVersionOne}"
+    implementation "com.google.android.material:material:${versions.androidXMaterial}"
 
     // constraint
     implementation "com.android.support.constraint:constraint-layout:${versions.constraintLayuotLib}"

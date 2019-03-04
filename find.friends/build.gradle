@@ -1,7 +1,7 @@
 apply plugin: 'com.android.library'
 
 android {
-    compileSdkVersion 27
+    compileSdkVersion 28
     defaultConfig {
         minSdkVersion 15
         versionCode 1
@@ -31,11 +31,11 @@ dependencies {
     implementation 'com.github.florent37:materialtextfield:1.0.7'
 
     // support
-    implementation 'com.android.support:appcompat-v7:27.1.1'
-    implementation "com.android.support.constraint:constraint-layout:${versions.constraintLayuotLib}"
+    implementation "androidx.appcompat:appcompat:${versions.androidXAppCompat}"
+    implementation "androidx.constraintlayout:constraintlayout:${versions.androidXconstraintLayuot}"
+    implementation "com.google.android.material:material:${versions.androidXMaterial}"
 
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'com.android.support.test:runner:1.0.2'
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
-    implementation 'com.android.support:design:27.1.1'
 }

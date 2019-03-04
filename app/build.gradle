@@ -1,7 +1,7 @@
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 27
+    compileSdkVersion 28
     defaultConfig {
         applicationId "com.tech.futureteric.goodmorning"
         // TODO support com.firebaseui:firebase-ui-auth on api 15
@@ -60,11 +60,11 @@ dependencies {
     annotationProcessor "com.jakewharton:butterknife-compiler:${versions.butterKnifeLib}"
 
     // support libraries
-    implementation "com.android.support:appcompat-v7:${versions.supportLib}"
-    implementation "com.android.support:design:${versions.supportLib}"
-    implementation "com.android.support:support-annotations:${versions.supportLib}"
-    implementation "com.android.support:support-v4:${versions.supportLib}"
-    implementation "com.android.support:recyclerview-v7:${versions.supportLib}"
+    implementation "androidx.appcompat:appcompat:${versions.androidXAppCompat}"
+    implementation "com.google.android.material:material:${versions.androidXMaterial}"
+    implementation "androidx.annotation:annotation:${versions.androidXVersionOne}"
+    implementation "androidx.legacy:legacy-support-v4:${versions.androidXVersionOne}"
+    implementation "androidx.recyclerview:recyclerview:${versions.androidXVersionOne}"
 
     // mixed versions avoidance
     implementation "com.android.support:exifinterface:${versions.supportLib}"

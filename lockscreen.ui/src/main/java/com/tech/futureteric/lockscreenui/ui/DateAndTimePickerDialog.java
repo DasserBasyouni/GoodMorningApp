@@ -1,7 +1,6 @@
 package com.tech.futureteric.lockscreenui.ui;
 
 import android.content.Context;
-import android.support.v4.app.FragmentManager;
 import android.util.Log;
 
 import com.kunzisoft.switchdatetime.SwitchDateTimeDialogFragment;
@@ -13,6 +12,8 @@ import java.util.Calendar;
 import java.util.Date;
 import java.util.GregorianCalendar;
 import java.util.TimeZone;
+
+import androidx.fragment.app.FragmentManager;
 
 public class DateAndTimePickerDialog {
 

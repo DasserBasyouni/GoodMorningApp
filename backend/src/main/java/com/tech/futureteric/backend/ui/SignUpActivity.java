@@ -2,11 +2,12 @@ package com.tech.futureteric.backend.ui;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.v4.view.LayoutInflaterCompat;
-import android.support.v7.app.AppCompatActivity;
 
 import com.mikepenz.iconics.context.IconicsLayoutInflater2;
 import com.tech.futureteric.backend.R;
+
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.view.LayoutInflaterCompat;
 
 import static com.tech.futureteric.sharedcomponents.utils.AnimationUtils.startActivityWithAnimation;
 

@@ -1,5 +1,7 @@
 package com.tech.futureteric.backend.utils.user;
 
+import android.content.Context;
+
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.auth.FirebaseUserMetadata;
@@ -13,7 +15,8 @@ import static com.tech.futureteric.backend.utils.AppFirestoreUtils.getDatabaseWi
 
 public class UserInfoUtils {
 
-    public static boolean isUserLoggedIn(){
+    public static boolean isUserLoggedIn(Context context){
+        //FirebaseApp.initializeApp(context);
         return FirebaseAuth.getInstance().getCurrentUser() != null;
     }
 

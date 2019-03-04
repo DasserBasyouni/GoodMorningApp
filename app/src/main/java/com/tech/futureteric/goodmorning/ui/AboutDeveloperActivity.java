@@ -1,12 +1,13 @@
 package com.tech.futureteric.goodmorning.ui;
 
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
 import android.view.ViewGroup;
 
 import com.tech.futureteric.goodmorning.R;
 import com.vansuita.materialabout.builder.AboutBuilder;
 import com.vansuita.materialabout.views.AboutView;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 public class AboutDeveloperActivity extends AppCompatActivity {
 

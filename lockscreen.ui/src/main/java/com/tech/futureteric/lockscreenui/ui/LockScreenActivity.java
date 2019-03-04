@@ -5,8 +5,6 @@ import android.graphics.drawable.BitmapDrawable;
 import android.graphics.drawable.Drawable;
 import android.os.Build;
 import android.os.Bundle;
-import android.support.constraint.ConstraintLayout;
-import android.support.v7.app.AppCompatActivity;
 import android.view.Window;
 import android.view.WindowManager;
 
@@ -14,6 +12,8 @@ import com.tech.futureteric.lockscreenui.R;
 import com.tech.futureteric.sharedcomponents.DataType;
 import com.tech.futureteric.sharedcomponents.model.IdlingDataModel;
 
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.constraintlayout.widget.ConstraintLayout;
 import timber.log.Timber;
 
 import static com.tech.futureteric.backend.utils.MorningImageUtils.getDailyMorningImageBitmap;

@@ -1,9 +1,10 @@
 package com.tech.futureteric.backend.viewModel.prefrences;
 
 import android.content.SharedPreferences;
-import android.support.annotation.NonNull;
 
 import org.jetbrains.annotations.NotNull;
+
+import androidx.annotation.NonNull;
 
 public final class SharedPreferenceStringLiveData extends SharedPreferenceLiveData {
 

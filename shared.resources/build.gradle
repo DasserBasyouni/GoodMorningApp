@@ -1,7 +1,7 @@
 apply plugin: 'com.android.library'
 
 android {
-    compileSdkVersion 27
+    compileSdkVersion 28
     defaultConfig {
         minSdkVersion 15
         versionCode 1
@@ -31,7 +31,7 @@ dependencies {
     implementation 'com.afollestad.material-dialogs:core:0.9.6.0'
 
     // support
-    implementation "com.android.support:appcompat-v7:${versions.supportLib}"
+    implementation "androidx.appcompat:appcompat:${versions.androidXAppCompat}"
 
     // mixed versions avoidance
     implementation 'com.android.support:recyclerview-v7:27.1.1'

@@ -1,8 +1,6 @@
 package com.tech.futureteric.goodmorning.adapter;
 
 import android.graphics.Bitmap;
-import android.support.annotation.NonNull;
-import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -14,6 +12,9 @@ import com.tech.futureteric.goodmorning.R;
 import com.tech.futureteric.lockscreenui.ui.LockScreenBuilder;
 
 import java.util.List;
+
+import androidx.annotation.NonNull;
+import androidx.recyclerview.widget.RecyclerView;
 
 import static com.tech.futureteric.sharedcomponents.utils.IconUtils.getPersonDrawable;
 

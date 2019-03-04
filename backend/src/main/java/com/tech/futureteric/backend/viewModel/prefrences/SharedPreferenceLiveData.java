@@ -1,9 +1,10 @@
 package com.tech.futureteric.backend.viewModel.prefrences;
 
-import android.arch.lifecycle.LiveData;
 import android.content.SharedPreferences;
 
 import org.jetbrains.annotations.NotNull;
+
+import androidx.lifecycle.LiveData;
 
 public abstract class SharedPreferenceLiveData extends LiveData {
     private final SharedPreferences.OnSharedPreferenceChangeListener preferenceChangeListener;

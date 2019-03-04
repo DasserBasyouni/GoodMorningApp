@@ -19,7 +19,7 @@ public class WelcomeActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        if (isUserLoggedIn())
+        if (isUserLoggedIn(this))
             finish();
 
         setContentView(R.layout.activity_welcome);
