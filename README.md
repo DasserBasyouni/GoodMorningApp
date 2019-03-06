@@ -1,4 +1,4 @@
-# GoodMorningApp
+# GoodMorningApp (Android Nanodegree graduation project)
 The main idea of GoodMorning app is to send reminders, messages, alarms & beautiful happy birthday animations and photos to people close to you. with mainly solved problems of other apps doing the main thing:
 
 1. Wi-Fi, 3G or Blutooth consumption - the app opens one of them o check for updates then it closes the connection to save battery and network consumption.
