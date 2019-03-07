@@ -4,9 +4,9 @@ The main idea of GoodMorning app is to send reminders, messages, alarms & beauti
 1. Wi-Fi, 3G or Blutooth consumption - the app opens one of them o check for updates then it closes the connection to save battery and network consumption.
 
 2. Noise and notifications while sleeping - the app only notify user with the recived message in three cases:
-- the user waked up and starts using the phone.
-- the user the waking up time (known from alarms) is now or passed.
-- the user enables a friend to send him message/alarm at specific time to wake him up.  
+- User's waking up time (is now or passed).
+- User waked up and starts using the phone.
+- User enables a friend to send him message/alarm at specific time to wake him up.  
 And about other apps notification recived when the app opens Wifi/3G to check for updates, the app mutes them temporary. 
 
 3. Having a unique customized celebration of birthday and events that can be synconized with recieving a gift from Amazon for example for people that are in a remote place to you.
