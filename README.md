@@ -18,7 +18,9 @@ Good Morning app is very simple right now that enable users to just send message
 <img src="/photos/GoodMorningApp%20-%20How%20does%20it%20works.png">
 
 # Screenshots
-<img src="/photos/Screenshot%201.png" width="250">  <img src="/photos/Screenshot%202.png" width="250">  <img src="/photos/Screenshot%203.png" width="250">  <img src="/photos/Screenshot%204.png" width="250">
+<p align="center"><img src="/photos/Screenshot%201.png" width="210"> <img src="/photos/Screenshot%202.png" width="210"> <img src="/photos/Screenshot%203.png" width="210"> <img src="/photos/Screenshot%204.png" width="210"></p>
+
+
 
 # Is the app is ready for users use?
 Defenitly No
